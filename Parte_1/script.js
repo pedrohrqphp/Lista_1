@@ -23,13 +23,14 @@ chegar a essa idade deverá imprimir: “Dados não encontrado!”*/
 
 function contador1() {
     let idade = Number(prompt('Digite a sua idade:'))
-    
-    for (let i=1; i<=idade; i++) {
-        if (i == idade) {
-            alert('Você tem essa idade = ' + idade)
-        }
-        else{
-            alert('Dados não encontrados!')
+
+    if (idade < 0){
+        alert('dados não encontrados')
+    }
+
+    for (let i=0; i<=idade; i++) {
+        if (i == idade){
+            alert('voce tem essa idade ' + i)
         }
     }
 }
@@ -38,17 +39,18 @@ function contador1() {
 
 function contador2() {
     let idade = Number(prompt('Digite sua idade:'))
-    let cont = 1
+
+    if (idade < 0){
+        alert('dados nao encontrados')
+    }
+
+    let cont = 0
 
     while (idade >= cont) {
         if (cont == idade) {
-            alert('Você tem essa idade = ' + idade)
-            break
+            alert('Você tem essa idade = ' + cont)
         }
-        else {
-            alert('Dados não encontrados')
-            cont++
-        }
+        cont++
     }
 }
 
@@ -66,11 +68,23 @@ muito boa”, caso 4: “Vikings com Ragnar era o melhor”, caso nenhuma das op
 não está na lista.*/
 
 function caso() {
-    console.log('Digite a opção que melhor te agrada:')
-    console.log('1 = Naruto')
-    console.log('2 = One Punch')
-    console.log('3 = Supernatural')
-    console.log('4 = Vikings')
-
+    alert('Digite a opção que melhor te agrada:\n1 = Naruto\n2 = One Punch\n3 = Supernatural\n4 = Vikings')
     let n = Number(prompt('Digite a opção:'))
+
+    switch(n) {
+        case 1:
+            alert('Gosto de anime Naruto')
+            break
+        case 2:
+            alert('One Punch é muito bom')
+            break
+        case 3:
+            alert('A série Supernatural é muito boa')
+            break
+        case 4:
+            alert('Vikings com Ragnar era o melhor')
+            break
+        default:
+            alert('Você assiste algo que não está na lista')
+    }
 }
