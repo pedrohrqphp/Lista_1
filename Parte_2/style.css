@@ -13,8 +13,19 @@ h1 {
     text-align: center;
 }
 
-.quest {
-    font-size: 25px;
+h2 {
+    text-align: center;
+}
+
+#calc {
+    background-color: rgba(128, 128, 128, 0.184);
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+}
+
+input {
+    width: 350px;
 }
 
 button {
