@@ -1,4 +1,4 @@
-NOME INTEGRANTES
+#Contribuidores
 
-* Eduardo de Paula Pestana
-* Pedro Henrique Costa Pereira
+- Eduardo de Paula Pestana
+- Pedro Henrique Costa Pereira

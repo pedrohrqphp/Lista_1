@@ -4,16 +4,16 @@ concatenando o valor; se for maior que 18 e menor igual a 65 deverá imprimir: �
 acima de 65 anos deverá imprimir você é idoso. (Deverá utilizar if..else if..else)*/
 
 function idade() {
-    let x = Number(prompt('Idade:'))
+    let x = document.querySelector('#classeIdade').value
 
     if (x < 18) {
-        alert('Você é adolescente = ' + x);
+        alert('Você é adolescente')
     }
     else if (x >= 18 && x <= 65) {
-        alert('Você é jovem = ' + x);
+        alert('Você é jovem')
     }
     else {
-        alert('Você é idoso = ' + x);
+        alert('Você é idoso')
     }
 }
 
@@ -22,15 +22,15 @@ pelo usuário deverá imprimir uma mensagem: “Você tem essa idade: “ + idad
 chegar a essa idade deverá imprimir: “Dados não encontrado!”*/
 
 function contador1() {
-    let idade = Number(prompt('Digite a sua idade:'))
+    let y = document.querySelector('#forIdade').value
 
-    if (idade < 0){
-        alert('dados não encontrados')
+    if (y < 0){
+        alert('Dados não encontrados')
     }
 
-    for (let i=0; i<=idade; i++) {
-        if (i == idade){
-            alert('voce tem essa idade ' + i)
+    for (let i=0; i<=y; i++) {
+        if (i == y){
+            alert('Você tem essa idade: ' + i)
         }
     }
 }
@@ -38,7 +38,7 @@ function contador1() {
 /*3) Utilizando o laço “While” utilize a mesma lógica com do laço “For”.*/
 
 function contador2() {
-    let idade = Number(prompt('Digite sua idade:'))
+    let idade = document.querySelector('#whileIdade').value
 
     if (idade < 0){
         alert('dados nao encontrados')
@@ -48,7 +48,7 @@ function contador2() {
 
     while (idade >= cont) {
         if (cont == idade) {
-            alert('Você tem essa idade = ' + cont)
+            alert('Você tem essa idade: ' + cont)
         }
         cont++
     }
@@ -68,8 +68,7 @@ muito boa”, caso 4: “Vikings com Ragnar era o melhor”, caso nenhuma das op
 não está na lista.*/
 
 function caso() {
-    alert('Digite a opção que melhor te agrada:\n1 = Naruto\n2 = One Punch\n3 = Supernatural\n4 = Vikings')
-    let n = Number(prompt('Digite a opção:'))
+    let n = Number(document.querySelector('#serie').value)
 
     switch(n) {
         case 1:
